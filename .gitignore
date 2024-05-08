@@ -1,0 +1,29 @@
+# Dependencias
+node_modules/
+
+# Archivos de configuración del entorno
+.env
+
+# Directorios de compilación
+dist/
+build/
+out/
+
+# Sistema de archivos
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Directorios específicos del editor
+.vscode/
+.idea/
+
+# Archivos de configuración de la compilación
+*.sublime-workspace
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
