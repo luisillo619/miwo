@@ -1,21 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-  </head>
 
-  <body class="w-screen h-screen overflow-hidden">
-    <!-- DIV GENERAL -->
-    <div class="h-full w-full">
-      <!-- DIV GENERAL LANDING -->
-      <div
-        class="h-full w-full flex items-center flex-col p-2 overflow-y-scroll gap-2"
-      >
-        <!-- NAVBAR -->
-        <section class="bg-black w-11/12">dsfdsf</section>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- Link Swiper's CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper styles -->
+  <style>
+   .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide {
+      display: block;
+      width: 100%;
+    }
+ 
+  </style>
+
+</head>
+
+<body class="w-screen h-fit">
+  <!-- DIV GENERAL -->
+  <div class="h-full w-full">
+
+
+    <!-- DIV GENERAL LANDING -->
+    <div class="h-full w-full flex items-center flex-col overflow-y-scroll gap-2">
+
+
+      <!-- NAVBAR -->
+      <section class="w-full h-[12vh] flex justify-around items-center gap-48">
+        <img class="cursor-pointer" src="../public/menu-svgrepo-com.svg" alt="">
+        <img class="w-14 h-14 cursor-pointer" src="../public/miwo.svg" alt="">
+      </section>
+
+
+      <!-- HERO -->
+      <img class="w-[100%] h-screen absolute z-0" src="../public/img-svgrepo-com.svg" alt="">
+      <section class=" w-full h-[88vh] relative">
+        <div class="w-full h-full absolute z-10 bg-transparent flex flex-col justify-center items-center gap-24">
+          <section class="w-10/12 flex flex-col gap-4">
+            <div class="flex flex-col gap-3 justify-center items-center text-3xl font-medium">
+              <h1 class="m-0 p-0 tracking-widest w-full text-center">Ven a la fiesta</h1>
+              <h1 class="m-0 p-0 tracking-widest w-full text-center">Con Miwo</h1>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-sm">
+              <p class="m-0 p-0 tracking-widest">Comparte ese momento especial</p>
+              <p class="m-0 p-0 tracking-widest">con los que más quieres</p>
+            </div>
+          </section>
+
+          <button class="w-8/12 tracking-widest text-sm p-2 rounded-lg text-white bg-[#abababd6]">¡¡Comienza
+            ya!!</button>
+        </div>
+
+      </section>
+
+      
+      <section class="w-full h-[110vh] relative ">
+        lorem*2
+      </section>
+
+      <!-- CARROUSEL -->
+      <section class="w-full h-[25vh]">
+        <div style="--swiper-pagination-color: #ABABAB"  class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="w-full" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+     
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 30,
+            effect: "fade",
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

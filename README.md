@@ -23,3 +23,5 @@ Para compilar tu CSS con Tailwind y habilitar el modo de vigilancia para que los
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 Este comando toma el archivo input.css ubicado en el directorio src, procesa los estilos utilizando Tailwind CSS, y genera el archivo output.css en el mismo directorio. El flag --watch hace que Tailwind monitoree el archivo de entrada para cualquier cambio y recompile automáticamente el archivo de salida.
 
+SVG
+https://www.svgrepo.com
