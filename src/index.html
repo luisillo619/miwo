@@ -12,7 +12,7 @@
 
   <!-- Swiper styles -->
   <style>
-   .swiper {
+    .swiper {
       width: 100%;
       height: 100%;
     }
@@ -26,12 +26,20 @@
       display: block;
       width: 100%;
     }
- 
+
+    .swiper-pagination-bullet {
+      --swiper-pagination-bullet-inactive-color: white;
+      --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: rgb(74, 74, 74);
+    }
   </style>
 
 </head>
 
-<body class="w-screen h-fit">
+<body class="w-screen h-fit overflow-x-hidden">
   <!-- DIV GENERAL -->
   <div class="h-full w-full">
 
@@ -69,14 +77,14 @@
 
       </section>
 
-      
+      <!-- LORE -->
       <section class="w-full h-[110vh] relative ">
         lorem*2
       </section>
 
       <!-- CARROUSEL -->
       <section class="w-full h-[25vh]">
-        <div style="--swiper-pagination-color: #ABABAB"  class="swiper mySwiper">
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img class="w-full" src="https://swiperjs.com/demos/images/nature-1.jpg" />
@@ -94,20 +102,20 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-     
 
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 30,
-            effect: "fade",
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
-        </script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          spaceBetween: 30,
+          effect: "fade",
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 
     </div>
   </div>
