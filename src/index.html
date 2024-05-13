@@ -7,9 +7,9 @@
   <link href="./output.css" rel="stylesheet" />
 
   <!-- TIPOS DE LETRA -->
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;500&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;500;600&family=Josefin+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet" />
   <!-- Link Swiper's CSS and JS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -40,45 +40,47 @@
       background-color: rgb(74, 74, 74);
     }
   </style>
-
 </head>
 
 <body class="w-screen h-fit overflow-x-hidden">
   <!-- DIV GENERAL -->
   <div class="h-full w-full">
-
-
     <!-- DIV GENERAL LANDING -->
     <div class="h-full w-full flex items-center flex-col overflow-y-scroll gap-2">
-
-
       <!-- NAVBAR -->
       <section class="w-full h-[12vh] flex justify-around items-center gap-48 border border-solid border-red-950">
-        <img class="cursor-pointer" src="../public/menu-svgrepo-com.svg" alt="">
-        <img class="w-14 h-14 cursor-pointer" src="../public/miwo.svg" alt="">
+        <img class="cursor-pointer" src="../public/menu-svgrepo-com.svg" alt="" />
+        <img class="w-14 h-14 cursor-pointer" src="../public/miwo.svg" alt="" />
       </section>
 
-
       <!-- HERO -->
-      <img class="w-[100%] h-screen absolute z-0" src="../public/img-svgrepo-com.svg" alt="">
-      <section class=" w-full h-[88vh] relative border border-solid border-red-950">
+      <img class="w-[100%] h-screen absolute z-0" src="../public/img-svgrepo-com.svg" alt="" />
+      <section class="w-full h-[88vh] relative border border-solid border-red-950">
         <div class="w-full h-full absolute z-10 bg-transparent flex flex-col justify-center items-center gap-24">
           <section class="w-10/12 flex flex-col gap-4">
-            <div style="font-family: 'Josefin Sans', sans-serif" class="flex flex-col gap-3 justify-center items-center text-3xl font-medium">
-              <h1 class="m-0 p-0 tracking-widest w-full text-center">Ven a la fiesta</h1>
-              <h1 class="m-0 p-0 tracking-widest w-full text-center">Con Miwo</h1>
+            <div style="font-family: 'Josefin Sans', sans-serif"
+              class="flex flex-col gap-3 justify-center items-center text-3xl font-medium">
+              <h1 class="m-0 p-0 tracking-widest w-full text-center">
+                Ven a la fiesta
+              </h1>
+              <h1 class="m-0 p-0 tracking-widest w-full text-center">
+                Con Miwo
+              </h1>
             </div>
 
-            <div style="font-family: 'Istok Web', sans-serif" class="flex flex-col justify-center items-center text-sm ">
-              <p class="m-0 p-0 tracking-widest">Comparte ese momento especial</p>
+            <div style="font-family: 'Istok Web', sans-serif" class="flex flex-col justify-center items-center text-sm">
+              <p class="m-0 p-0 tracking-widest">
+                Comparte ese momento especial
+              </p>
               <p class="m-0 p-0 tracking-widest">con los que más quieres</p>
             </div>
           </section>
 
-          <button class="w-8/12 tracking-widest text-sm p-2 rounded-lg text-white bg-[#abababd6]" style="font-family: 'Istok Web', sans-serif">¡¡Comienza
-            ya!!</button>
+          <button class="w-8/12 tracking-widest text-sm p-2 rounded-lg text-white bg-[#abababd6]"
+            style="font-family: 'Istok Web', sans-serif">
+            ¡¡Comienza ya!!
+          </button>
         </div>
-
       </section>
 
       <!-- LORE -->
@@ -88,45 +90,151 @@
 
       <!-- CARROUSEL -->
       <section class="w-full h-[20vh] flex justify-center border border-solid border-red-950">
-       <div class="w-full">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img class="w-full" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <div class="w-full">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="w-full" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img class="w-full" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img class="w-full" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-full" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img class="w-full" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-       </div>
-
-      
       </section>
 
+      <!-- PASOS LORE -->
+      <section class="w-full h-[120vh] relative border border-solid border-red-950">
+        Pasos
+      </section>
+
+      <!-- PRECIOS -->
+      <section class="w-full h-[220vh] border border-solid border-red-950 bg-gray-100 flex justify-center pt-12 pb-12">
+        <div class="w-10/12 h-full flex flex-col items-center gap-8">
+          <section class="w-full flex flex-col">
+            <h1
+              class="flex flex-col w-full m-0 p-0 tracking-wider text-[#628DD9] text-right font-josefin font-semibold">
+              <span class="flex-1 whitespace-nowrap -mb-1.5">No lo pienses, más, tenemos un</span>
+              <span class="flex-1 whitespace-nowrap">paquete justo para lo que necesitas</span>
+            </h1>
+          </section>
+
+          <section
+            class="w-full flex flex-col items-center pl-5 pr-5 pt-7 pb-7 bg-white gap-6 rounded-xl shadow-prices border-t-0">
+            <div class="w-full flex flex-col gap-6">
+              <div class="font-istok">
+                <h1 class="font-semibold text-base">Paquete 1</h1>
+                <h2 class="text-sm">Reunion pequeña</h2>
+              </div>
+
+              <p class="font-istok text-sm">Descripcion breve del paquete</p>
+
+              <div class="font-istok text-sm">
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+              </div>
+
+              <div class="font-istok">
+                <h2 class="text-2xl">$299.99</h2>
+                <span class="text-xs">*Letras pequeñas sobre el servicio</span>
+              </div>
+            </div>
+            <button
+              class="w-full tracking-widest text-xs p-3 rounded-lg text-gray-50 border-2 border-solid bg-[#69C6D2] font-istok font-semibold">
+              ¡Lo quiero!
+            </button>
+          </section>
+
+          <section
+          class="w-full flex flex-col items-center pl-5 pr-5 pt-7 pb-7 bg-white gap-6 rounded-xl shadow-prices border-t-0">
+          <div class="w-full flex flex-col gap-6">
+            <div class="font-istok">
+              <h1 class="font-semibold text-base">Paquete 2</h1>
+              <h2 class="text-sm">Más que una fiesta</h2>
+            </div>
+
+            <p class="font-istok text-sm">Descripcion breve del paquete</p>
+
+            <div class="font-istok text-sm">
+              <p>*Incluye</p>
+              <p>*Incluye</p>
+              <p>*Incluye</p>
+              <p>*Incluye</p>
+              <p>*Incluye</p>
+              <p>*Incluye</p>
+            </div>
+
+            <div class="font-istok">
+              <h2 class="text-2xl">$299.99</h2>
+              <span class="text-xs">*Letras pequeñas sobre el servicio</span>
+            </div>
+          </div>
+          <button
+            class="w-full tracking-widest text-xs p-3 rounded-lg text-gray-50 border-2 border-solid bg-[#69C6D2] font-istok font-semibold">
+            ¡Lo quiero!
+          </button>
+        </section>
+
+        <section
+            class="w-full flex flex-col items-center pl-5 pr-5 pt-7 pb-7 bg-white gap-6 rounded-xl shadow-prices border-t-0">
+            <div class="w-full flex flex-col gap-6">
+              <div class="font-istok">
+                <h1 class="font-semibold text-base">Paquete 3</h1>
+                <h2 class="text-sm">¡Festeja a lo grande!</h2>
+              </div>
+
+              <p class="font-istok text-sm">Descripcion breve del paquete</p>
+
+              <div class="font-istok text-sm">
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+                <p>*Incluye</p>
+              </div>
+
+              <div class="font-istok">
+                <h2 class="text-2xl">$299.99</h2>
+                <span class="text-xs">*Letras pequeñas sobre el servicio</span>
+              </div>
+            </div>
+            <button
+              class="w-full tracking-widest text-xs p-3 rounded-lg text-gray-50 border-2 border-solid bg-[#69C6D2] font-istok font-semibold">
+              ¡Lo quiero!
+            </button>
+          </section>
+
+
+        </div>
+      </section>
 
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
           loop: true,
           autoplay: {
-           delay: 1300,
-           disableOnInteraction: false,
-         },
+            delay: 1300,
+            disableOnInteraction: false,
+          },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
         });
       </script>
-
     </div>
   </div>
 </body>

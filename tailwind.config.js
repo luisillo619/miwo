@@ -8,6 +8,10 @@ module.exports = {
         'josefin': ['"Josefin Sans"', 'sans-serif']
       },
      
+        boxShadow: {
+          'prices': '-4px 0 8px -4px rgba(0, 0, 0, 0.1), 4px 0 8px -4px rgba(0, 0, 0, 0.1), 0 12px 12px -6px rgba(0, 0, 0, 0.3)'
+        }
+      
     }
   },
   plugins: [],
